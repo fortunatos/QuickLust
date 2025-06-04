@@ -1,110 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>QuickLust – Real Women. No Waiting.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta name="description" content="No games. No stress. Just real women in your area looking for quick fun.">
+  <title>QuickLust</title>
+
+  <!-- Google Analytics -->
+  <script async src='https://www.googletagmanager.com/gtag/js?id=G-4RK11EWEJE'></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4RK11EWEJE');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+  <link href="https://maturelovers.club/alecia/378f0dd4826e490864d2573ce6719e6e.static.css" rel="stylesheet"/>
+  <meta content="#ffffff" name="msapplication-TileColor"/>
+  <meta content="https://maturelovers.club/alecia/theme/australianlocals/images/favicon/ms-icon-144x144.png" name="msapplication-TileImage"/>
 
   <style>
     body {
-      background: #101010;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 26px;
-      margin-bottom: 10px;
-      line-height: 1.3;
-    }
-
-    p.city {
-      font-size: 18px;
-      margin: 10px 0 5px 0;
-      color: #aaa;
-    }
-
-    p.counter {
-      font-size: 16px;
-      margin-bottom: 30px;
-      color: #66ff66;
-    }
-
-    a.cta-button {
-      background-color: #e60000;
+      font-family: Arial, sans-serif;
       color: white;
-      padding: 15px 40px;
-      border-radius: 8px;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://maturelovers.club/alecia/in_css_7b82a3f147c0b6b1b41b141976336713.static.jpg') no-repeat center top fixed;
+      animation: zoomInOut 4s infinite;
+      -webkit-animation: zoomInOut 4s infinite;
+      z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+      .background-image {
+        background-size: cover;
+      }
+    }
+
+    .btn-primary {
+      background-color: #cc0000;
+      padding: 15px 30px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+      margin: 20px 0;
+      animation: pulse 2s infinite;
+    }
+
+    .btn-primary:hover {
+      background-color: #990000;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .seo-description {
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      max-width: 80%;
+      margin: 20px auto;
+    }
+
+    .city-message {
+      text-align: center;
       font-size: 20px;
       font-weight: bold;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
+      margin-top: 25px;
     }
 
-    a.cta-button:hover {
-      background-color: #b30000;
+    .online-count {
+      text-align: center;
+      font-size: 16px;
+      opacity: 0.85;
+      margin-top: 10px;
     }
 
-    .footnote {
-      font-size: 12px;
-      color: #666;
-      margin-top: 40px;
+    .website-container {
+      padding-top: 60px;
+    }
+
+    .step-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 auto 20px;
+      max-width: 85%;
     }
   </style>
-
- <!-- Google tag (gtag.js) -->
-    <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-4RK11EWEJE'></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-4RK11EWEJE');
-    </script>
-
 </head>
+
 <body>
+  <div class="background-image"></div>
+  <div class="website-container">
 
-  <h1>Women Near You Want Quick Fun</h1>
-  <p class="city" id="location">Checking your city…</p>
-  <p class="counter" id="counter">Users online: 218</p>
+    <div class="step step_0" style="display: block;">
+      <div class="step-title">
+        Are you ready to come in contact with mature women wanting discreet encounters?
+      </div>
 
-  <a href="https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=QuickLust" class="cta-button">
-    Enter QuickLust Now
-  </a>
+      <a href="https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=HookMeFast">
+        <span class="btn-primary">Yes, show me who’s online</span>
+      </a>
 
-  <div class="footnote">
-    No signup required. 100% free to browse. 18+ only.
+      <div id="cityMessage" class="city-message">Finding active profiles near you...</div>
+      <div id="userCount" class="online-count">🔥 41 women are online now</div>
+
+      <div class="seo-description">
+        Discreet fun now.
+      </div>
+
+      <div style="clear:both"></div>
+    </div>
+
   </div>
 
+  <!-- Localização via IP -->
   <script>
-    // Geolocalização
     fetch("https://ipapi.co/json/")
       .then(res => res.json())
       .then(data => {
-        const city = data.city;
-        document.getElementById('location').innerText =
-          city ? `Verified users in ${city} are waiting...` : `Verified users are waiting...`;
+        const city = data.city || "your city";
+        document.getElementById("cityMessage").innerText = `Mature women in ${city} are waiting for you now.`;
       });
+  </script>
 
-    // Contador Simulado
-    let count = 218;
+  <!-- Contador falso de usuárias online -->
+  <script>
+    let count = 41;
     setInterval(() => {
-      const variation = Math.random() > 0.5 ? 1 : -1;
-      count += variation;
-      if (count < 180) count = 180;
-      if (count > 270) count = 270;
-      document.getElementById('counter').innerText = `Users online: ${count}`;
-    }, 3000);
+      count += (Math.random() > 0.5 ? 1 : -1);
+      if (count < 30) count = 30;
+      if (count > 55) count = 55;
+      document.getElementById("userCount").innerText = `🔥 ${count} women are online now`;
+    }, 4000);
   </script>
 
 </body>
